@@ -63,10 +63,10 @@ class CustomTableViewCell: UITableViewCell {
     
     func NSLayOut() {
         NSLayoutConstraint.activate([
-            backView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 10),
-            backView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
-            backView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -10),
-            backView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -10),
+            backView.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
+            backView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+            backView.rightAnchor.constraint(equalTo: rightAnchor, constant: -10),
+            backView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
             backView.heightAnchor.constraint(equalToConstant: 100),
             
             userImg.leadingAnchor.constraint(equalTo: backView.leadingAnchor, constant: 5),
